@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite" parallel="false">
+    <test name="Store">
+        <classes>
+            <class name="Tests.Home"/>
+            <class name="Tests.Auth.Register"/>
+            <class name="Tests.Auth.Logout"/>
+            <class name="Tests.Auth.Forget_Password"/>
+            <class name="Tests.Auth.Login"/>
+            <class name="Tests.Auth.Account"/>
+            <class name="Tests.Auth.AccountFunctions.EditAccountInformation"/>
+            <class name="Tests.Auth.AccountFunctions.ChangePassword"/>
+            <class name="Tests.Auth.AccountFunctions.NewLetters"/>
+            <class name="Tests.Auth.AccountFunctions.AffliateAccount"/>
+            <class name="Tests.Auth.AccountFunctions.AddressBook"/>
+            <class name="Tests.Auth.AccountFunctions.NewAddress"/>
+            <class name="Tests.Auth.AccountFunctions.OrderHistory"/>
+            <class name="Tests.Auth.AccountFunctions.Transcations"/>
+            <class name="Tests.Auth.AccountFunctions.ReturnRequests"/>
+            <class name="Tests.Auth.AccountFunctions.RewardPoints"/>
+            <class name="Tests.Auth.AccountFunctions.Downloads"/>
+            <class name="Tests.Auth.AccountFunctions.Subscriptions"/>
+            <class name="Tests.Products.Product_List"/>
+            <class name="Tests.Products.Single_Product"/>
+            <class name="Tests.Products.Search"/>
+            <class name="Tests.Auth.AccountFunctions.Wistlist"/>
+            <class name="Tests.Cart"/>
+            <class name="Tests.Checkout"/>
+        </classes>
+    </test>
+    <test name="admin">
+        <classes>
+            <class name="Tests.Admin.Admin_Login"/>
+            <class name="Tests.Admin.Dashboard"/>
+            <class name="Tests.Admin.System.Settings"/>
+            <class name="Tests.Admin.Customers.Single_Customer"/>
+            <class name="Tests.Admin.Customers.Customers"/>
+            <class name="Tests.Admin.Products.Single_Product"/>
+            <class name="Tests.Admin.Products.Products"/>
+            <class name="Tests.Admin.Orders.Single_Order"/>
+            <class name="Tests.Admin.Orders.Orders"/>
+        </classes>
+    </test>
+    <test name="cucumberTest">
+        <classes>
+            <class name="CucumberTests.Runners.TestRunner"/>
+            </classes>
+    </test>
+</suite>
+
